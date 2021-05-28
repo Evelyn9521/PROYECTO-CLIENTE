@@ -1,0 +1,304 @@
+body{
+    background-color: #f0f0f0;
+}
+.home {
+    min-height: 100vh;
+    
+     display: flex;
+    flex-direction: column;
+    }
+    
+.content {
+    flex-grow: 1;
+    
+    }
+
+.linksNav{
+    width: 100%;
+    height:50px ;
+    background-color: #626562;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.linkk{
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+}
+.linkk:hover{
+color:black;
+}
+
+
+.photoPortada{
+    background-image: url(../../image/cancerdemama.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 285px;
+    
+} 
+/* da estilos a todos los titulos del texto */
+.colors{
+    color: rgb(224, 150, 162);
+    font-weight: bolder;
+    font-style:italic;
+}
+
+
+/*............................ APARTADO INICIO EN HOME................. */
+/* imagen de fondo en inicio */
+/* .imgBackground{
+    background-image: url(../../image/bench-accounting-xxeAftHHq6E-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+} */
+
+/* divide la pág en dos columnas */
+.InicioTwoColumns{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+/* columna derecha de la pág inicio */
+.columnrigth{
+   width: 75%;
+   margin-left: 20px;
+   margin-right: 20px;
+   background-color: white;
+   padding: 15px;
+   margin-top: 20px;
+  border-radius: 50px;
+ 
+}
+/* columna izquierda de la pág inicio */
+.columnleftt {
+    margin-left: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    font-family: verdana;
+    margin-right: 40px;
+    background-color: white;
+    padding:35px;
+    border-radius: 50px;
+   
+}
+.columnleftt li{
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.columnleftt li a{
+    text-decoration: none;
+    color: black;
+
+}
+.columnleftt li a:hover{
+    color:rgb(224, 150, 162);
+ 
+   
+}
+
+/* estilos del título de la pág inicio columna derecha */
+.title1 {
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center;
+    font-family: Verdana;
+
+  
+   
+
+}
+.title1 h2{
+    margin-bottom: 20px;
+   text-decoration: 3px underline;
+    color: rgb(224, 150, 162);
+    font-weight: bolder;
+   
+}
+
+/* estilos del contenido de la columna derecha */
+.witdhDiv ul li {
+   margin-bottom: 15px;
+    text-align: start;
+    text-align: justify;
+    font-size: 18px;
+    font-family: verdana;
+    
+
+}
+.styleParagraph p{
+    text-align: start;
+    text-align: justify;
+    font-family: verdana;
+    font-size: 18px;
+}
+.marginBottom{
+    margin-bottom:40px;
+}
+
+
+
+/* .......................APARTADO DE CUIDE SU SALUD EN HOME.................. */
+
+/* estilos de las cards */
+.card-container {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap: 30px;
+    padding: 40px;
+   
+   
+    
+}
+.card-container .card{
+    font-size: 15px;
+    text-align: start;
+    text-align: justify;
+    font-family: verdana;
+    font-size: 15px;
+  
+}
+.card-container .card .card-body h4{
+    text-align: center;
+    color: rgb(224, 150, 162);
+    font-weight:bolder;
+}
+
+
+
+/* contenedor del titulo y párrafo */
+.divPadre{
+   margin-top: 50px;
+   font-family: verdana;
+   margin-left: 65px;
+   margin-right: 65px;
+   background-color: white;
+   border-radius: 20px;
+   padding: 30px;
+   color:black;
+    
+}
+.divPadre h2{
+    color:rgb(224, 150, 162) ;
+    font-weight: bolder;
+}
+
+
+
+/* ..................APARTADO DE CHAT GLOBAL ...................*/
+
+/* Contenedor de la página */
+.chat-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* divide la pagina en dos columnas */
+.box{
+    flex-grow: 1;
+    
+    background-color:	#e9967a;
+    margin:15px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+}
+
+/* columna izquierda de contactos */
+.contactsleft{
+    background-color:	#ffe4c4;
+    margin: 20px;
+    border-radius: 20px;
+    
+}
+/* columna derecha del chat */
+.chatrigth{
+ 
+    background-color:	#ffe4c4;
+    margin:20px;
+    border-radius: 20px;
+}
+
+.cardfixed{
+    overflow-y: scroll;  
+    /* height: 70vh;   */
+}
+
+.inputDown{
+    flex-grow: 1;
+}
+
+/* titulo del chat, columna derecha */
+.card-header {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: transparent;
+    border-bottom: 3px solid rgba(26, 27, 27, 0.07);
+    /* position:fixed; */
+    
+}
+
+h4.card-title {
+    font-size: 27px;
+  
+} 
+
+
+  .media-chat .media-body {
+    flex: initial;
+    display: table
+}  
+
+
+.media {
+    padding: 16px 12px;
+
+}
+
+ .media-chat.chat-reverse .media-body p {
+    float: right;
+    clear: right;
+    background-color: #48b0f7;
+    color: #fff
+} 
+
+.media-chat .media-body p {
+    position: relative;
+    padding: 6px 8px;
+    margin: 4px 0;
+    background-color: #f5f6f7;
+    border-radius: 3px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

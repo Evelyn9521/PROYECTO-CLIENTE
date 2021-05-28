@@ -1,0 +1,111 @@
+
+/* ocupa toda la página restante desde la navbar  */
+.d-flex{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* hace que la navbar esté fija con esas medidas  */
+.flex-grow{
+    flex-grow: 1;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo de navbar */
+.topnav {
+  background-color: #625E60;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* logo navbar */
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* links  mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* estilos input navbar */
+.topnav .input2 {
+  padding: 10px;
+  margin-top: 12px;
+  border: none;
+  width: 200px; 
+  margin-right: 25px;
+  height: 40px;
+}
+
+/* estilos del botón Entrar con mouse:hover*/
+.topnav .login-container button {
+  padding: 6px;
+  margin-top: 16px;
+  margin-right: 16px;
+  background:white;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.topnav .login-container button:hover {
+  background: #ccc;
+}
+
+/* borde del formulario */
+.border1{
+  width: 600px;
+}
+
+/* tamaño y estilos de los input del formulario */
+input{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+   border: none;
+   padding: 12px;
+   
+}
+
+/* separación entre los inputs del formulario */
+.marginInput{
+    margin-top: 30px;
+    
+}
+
+/* botón de crear cuenta */
+.button3{
+    width: 70%;
+    height: 55px;
+    background-color: rgb(238, 136, 153);
+    border-radius: 12px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px
+}
+.button3:hover{
+  background-color: #625E60;
+}
+/* titulo de crear cuenta */
+.title{
+  color: white;
+}
+
