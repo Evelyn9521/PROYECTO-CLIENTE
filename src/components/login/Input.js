@@ -12,7 +12,7 @@ export default function Input() {
     }
 
     return (
-        <div className="vh">
+        <div>
            
             <div>
                 <img  className="logo" src={m5}></img>

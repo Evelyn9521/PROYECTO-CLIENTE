@@ -31,15 +31,14 @@ body{
 color:black;
 }
 
-
 .photoPortada{
     background-image: url(../../image/cancerdemama.jpg);
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 285px;
-    
+    height: 285px; 
 } 
+
 /* da estilos a todos los titulos del texto */
 .colors{
     color: rgb(224, 150, 162);
@@ -49,12 +48,7 @@ color:black;
 
 
 /*............................ APARTADO INICIO EN HOME................. */
-/* imagen de fondo en inicio */
-/* .imgBackground{
-    background-image: url(../../image/bench-accounting-xxeAftHHq6E-unsplash.jpg);
-    background-size: cover;
-    background-position: center center;
-} */
+
 
 /* divide la pág en dos columnas */
 .InicioTwoColumns{
@@ -62,7 +56,6 @@ color:black;
     grid-template-columns: 300px 1fr;
     display: flex;
     justify-content: center;
-    
     
 }
 
@@ -196,17 +189,17 @@ color:black;
 
 
 
-/* ..................APARTADO DE CHAT GLOBAL ...................*/
+/* ..................APARTADO DE CHAT EN HOME ...................*/
 
 /* Contenedor de la página */
 .chat-page {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-/* divide la pagina en dos columnas */
-.box{
+/* divide el chat en dos columnas */
+.divTwoColumns{
     flex-grow: 1;
     
     background-color:	#e9967a;
@@ -232,13 +225,20 @@ color:black;
 }
 
 .cardfixed{
-    overflow-y: scroll;  
-    /* height: 70vh;   */
+    /* overflow-y: scroll;   */
+     /* height: 70vh;   */
 }
-
+/* 
 .inputDown{
     flex-grow: 1;
-}
+} */
+.rest {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+   
+    }
 
 /* titulo del chat, columna derecha */
 .card-header {
@@ -248,12 +248,12 @@ color:black;
     padding: 15px 20px;
     background-color: transparent;
     border-bottom: 3px solid rgba(26, 27, 27, 0.07);
-    /* position:fixed; */
     
 }
 
+
 h4.card-title {
-    font-size: 27px;
+    font-size: 32px;
   
 } 
 
@@ -272,18 +272,33 @@ h4.card-title {
  .media-chat.chat-reverse .media-body p {
     float: right;
     clear: right;
-    background-color: #48b0f7;
-    color: #fff
+    background-color: #34cfe4;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bolder;
 } 
 
 .media-chat .media-body p {
-    position: relative;
     padding: 6px 8px;
     margin: 4px 0;
     background-color: #f5f6f7;
     border-radius: 3px
 }
 
+/* titulo de la lista de conectados */
+.contactsleft h2{
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+/* lista de conectados */
+.conectedList{
+    text-align:justify;
+    font-size:larger;
+    margin-bottom: 12px;
+    
+ 
+}
 
 
 

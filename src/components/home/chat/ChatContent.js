@@ -1,16 +1,14 @@
 import React from 'react'
 
-
-
 export default function ChatContent({contacts, messages}) {
 
     return (
-        <div className=" content box" >
+        <div className=" content divTwoColumns" >
             
             <div className="contactsleft">
                 <h2>Contactos</h2>
-                <ul>
-                    {contacts.map((contact)=> <li>{contact.name}</li>)}
+                <ul >
+                    {contacts.map((contact)=> <li className="conectedList">{contact.name}</li>)}
                 </ul>
             </div>
                 

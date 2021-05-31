@@ -6,7 +6,7 @@ import "./register.css"
 
 export default function Register() {
     return (
-        <div className="d-flex">
+        <div className="d-flex photobackground">
             <Navbar/>
             <Form/>
             <Footer /> 

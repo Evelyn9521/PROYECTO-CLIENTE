@@ -1,32 +1,39 @@
-
-.vh{
- height: 100vh;
+/* tamaño de la página */
+.sizePage{
+    height: 100vh;
 }
-/* hace referencia al input de ususario y contraseña */
+
+/* input de ususario y contraseña */
 .input{
     margin-bottom: 15px;
     border-radius: 12px;
-    width: 25%; 
-    height: 50px;
+    width: 400px;
     border: none;
-    padding: 10px;
+    padding: 12px;
 }
 
-/* hace referencia al enlace de olvidar contraseña */
+/* titulo de ususario y contraseña */
+.labell{
+    font-size: 18px;
+    color: white;
+    font-weight: bolder;
+}
+
+/* enlace de olvidar contraseña */
 .link{
     text-decoration: none;
     margin-top: 20px;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 /* botón de inicio de sesión */
 .button1{
-    width: 25%;
-    height: 50px;
+    width:280px;
+    height: 55px;
     background-color: #625e60;
     border: none;
-    border-radius: 8px;
+    border-radius: 20px;
     color: white;
     cursor: pointer;
     margin-top: 25px;
@@ -40,30 +47,31 @@
 /* botón de crear nueva cuenta */
 .button2{
     margin-top: 50px;
-    width: 25%;
-    height: 70px;
-    border-radius: 10px;
+    width: 300px;
+    height: 60px;
+    border-radius: 15px;
     background-color:rgb(224, 150, 162);
     border:none;
     cursor: pointer;
     color: white;
     font-size: 23px;
+    font-weight: bolder;
 }
 .button2:hover{
     background-color: #625e60;
     color:white;
 }
  
-
-.photo2{
+/* imagen de fondo  */
+.photobackground{
     background-image: url(../../image/sarah-cervantes-BOBMNKVry0Q-unsplash.jpg);
     background-size: cover;
-    
 }
 
-/* titulo de ususario y contraseña */
-.labell{
-    font-size: 20px;
-    color: white;
+
+/* tamaño del logo  */
+.logo{
+    width: 380px; 
+  
 }
 

@@ -8,7 +8,7 @@ import Footer from "../footer/Footer"
 
 export default function ForgetPassword() {
     return (
-        <div className="dflex">
+        <div className="dflex photobackground">
             <Navbar />
             <InputPassword/>
             <Footer /> 

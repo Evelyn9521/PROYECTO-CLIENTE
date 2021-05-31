@@ -8,7 +8,7 @@ export default function Login() {
 
     return (
       
-        <div className="photo2">   
+        <div className="photobackground sizePage">   
             <Input/>
         </div>
         
