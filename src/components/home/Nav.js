@@ -7,7 +7,9 @@ export default function Nav() {
        
         <NavLink className="linkk" activeClassName= "text-dark" exact to="/inicio">Inicio</NavLink>
         <NavLink className="linkk" activeClassName= "text-dark" exact to="/cuidesusalud">Cuide su salud</NavLink>
-        <NavLink className="linkk" activeClassName= "text-dark" exact to="/chat">Chat global</NavLink>
+        <NavLink className="linkk" activeClassName= "text-dark" exact to="/enlacesinteres">Enlaces de interés</NavLink>
+        <NavLink className="linkk" activeClassName= "text-dark" exact to="/chat">Chat</NavLink>
+        
 
         </div>
     )

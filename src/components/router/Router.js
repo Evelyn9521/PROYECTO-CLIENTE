@@ -5,6 +5,7 @@ import {BrowserRouter, Route, Switch} from "react-router-dom";
 import ForgetPassword from '../forgetPassword/ForgetPassword';
 import Inicio from "../home/Inicio/Inicio"
 import CuideSuSalud from "../home/cuideSuSalud/CuideSuSalud"
+import EnlacesInteres from "../home/enlacesInteres/EnlacesInteres";
 import Chat from "../home/chat/Chat"
 
 export default function router() {
@@ -18,6 +19,7 @@ export default function router() {
                 <Route path="/inicio" component={Inicio}/>
                 <Route path="/cuidesusalud" component={CuideSuSalud}/>
                 <Route path="/chat" component={Chat}/>
+                <Route path= "/enlacesinteres" component={EnlacesInteres}/>
                 
             </Switch>
         </BrowserRouter>
