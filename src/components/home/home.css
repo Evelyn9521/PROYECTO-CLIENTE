@@ -187,6 +187,57 @@ color:black;
     font-weight: bolder;
 }
 
+/* ..............APARTADO ENLACES DE INTERÉS........ */
+
+/* divide la pág en 3 columnas después del titulo */
+.threeColumnsButtom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+/* titulo con breve descripción  */
+.title3{
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    color:slategray;
+   
+}
+
+.logo2{
+    height: 290px;
+    width: 300px;
+}
+
+/* botones de enlaces hacia otras webs */
+.button5{
+    width:280px;
+    height: 55px;
+    background-color:#e9967a;
+    border:none;
+    border-radius: 20px;
+    margin-top: 25px;
+    font-size: 20px;
+    color: white;
+}
+.button5:hover{
+    background-color:#626562;
+    color:white
+}
+.letterLink{
+  
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
 
 
 /* ..................APARTADO DE CHAT EN HOME ...................*/
@@ -201,7 +252,7 @@ color:black;
 /* divide el chat en dos columnas */
 .divTwoColumns{
     flex-grow: 1;
-    
+
     background-color:	#e9967a;
     margin:15px;
     border-radius: 20px;
