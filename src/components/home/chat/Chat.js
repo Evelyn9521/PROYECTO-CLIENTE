@@ -12,15 +12,15 @@ export default function Chat() {
         {name: "Julia", message:"Hola, como estás?", date:"23:58", avatar:""},
         {name: "Albert", message:"Hola, bien y tu?", date:"00:02", avatar:""},
         {name: "Julia", message:"Hola, como estás?", date:"23:58", avatar:""},
-        {name: "Albert", message:"Hola, bien y tu?", date:"00:02", avatar:""},
         {name: "Julia", message:"Hola, como estás?", date:"23:58", avatar:""},
         {name: "Albert", message:"Hola, bien y tu?", date:"00:02", avatar:""},
         {name: "Julia", message:"Hola, como estás?", date:"23:58", avatar:""},
-        {name: "Albert", message:"Hola, bien y tu?", date:"00:02", avatar:""},
         {name: "Julia", message:"Hola, como estás?", date:"23:58", avatar:""},
         {name: "Albert", message:"Hola, bien y tu?", date:"00:02", avatar:""},
+        {name: "Julia", message:"Hola, como estás?", date:"23:58", avatar:""},
         
       ];
+
 
     const users=[
         {name:"Julia"},
@@ -30,7 +30,7 @@ export default function Chat() {
       const [contacts, setContacts] = useState(users)
 
     return (
-        <div className="rest">
+        <div className="home" >
         
             <Nav/>
             <ChatContent messages={messages} setMessages={setMessages} contacts={contacts} setContacts={setContacts}/>

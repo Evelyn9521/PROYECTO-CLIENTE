@@ -22,47 +22,61 @@
   height: 70px;
   display: flex;
   justify-content: space-between;
+  padding: 15px;
 }
 
-/* logo navbar */
-.topnav a {
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 18px;
+/* Logo izquierdo de la Navbar */
+.logoLeft{
   display: flex;
+  justify-content: center;
   align-items: center;
-  color: white;
+  text-decoration: none;
+  color: black;
+
+}
+.ribbon{
+  color:rgb(230, 106, 126);
+
+}
+
+.buttonNav{
+  border-radius: 15px;
+  border: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bolder;  
 }
 
 /* links  mouse-over */
 .topnav a:hover {
-  background-color: #ddd;
   color: black;
+
 }
 
 /* estilos input navbar */
 .topnav .input2 {
-  padding: 10px;
-  margin-top: 12px;
+
+  margin-left: 10px;
   border: none;
   outline: none;
   width: 200px; 
-  margin-right: 25px;
   height: 40px;
+}
+
+.login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* estilos del botón Entrar con mouse:hover*/
 .topnav .login-container button {
-  padding: 6px;
-  margin-top: 16px;
-  margin-right: 16px;
-  background:white;
   font-size: 17px;
   border: none;
+  margin-left: 10px;
   border-radius: 8px;
-  cursor: pointer;
+  background:white;
+ 
 }
 
 .topnav .login-container button:hover {

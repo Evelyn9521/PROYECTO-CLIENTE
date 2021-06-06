@@ -1,7 +1,5 @@
 /* tamaño de la página */
-.sizePage{
-    height: 100vh;
-}
+
 
 /* input de ususario y contraseña */
 .input{
@@ -66,6 +64,7 @@
 .photobackground{
     background-image: url(../../image/sarah-cervantes-BOBMNKVry0Q-unsplash.jpg);
     background-size: cover;
+  
 }
 
 

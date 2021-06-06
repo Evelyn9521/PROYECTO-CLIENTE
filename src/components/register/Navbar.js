@@ -1,5 +1,7 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+import {faRibbon} from "@fortawesome/free-solid-svg-icons";
 
 
 
@@ -7,9 +9,9 @@ export default function Navbar() {
 
 
     return (
-           
             <div className="topnav">
-               <NavLink className="" exact to="/">MUJERES QUE LUCHAN</NavLink> 
+               
+               <button className="buttonNav"><NavLink className="logoLeft" exact to="/">MQL<FontAwesomeIcon className="ribbon" icon={faRibbon} ></FontAwesomeIcon></NavLink> </button>
                
                 <div className="login-container">
                         

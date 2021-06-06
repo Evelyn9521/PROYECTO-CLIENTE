@@ -8,11 +8,10 @@ export default function Login() {
 
     return (
       
-        <div className="photobackground sizePage">   
+        <div className="photobackground home">   
             <Input/>
         </div>
         
         
-      
     )
 };

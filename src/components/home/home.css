@@ -22,6 +22,7 @@ body{
     justify-content: space-around;
    
 }
+
 .linkk{
     color: white;
     font-size: 28px;
@@ -75,7 +76,7 @@ color:black;
     margin-left: 20px;
     margin-top: 25px;
     font-size: 20px;
-    font-family: verdana;
+    font-family: 'Times New Roman', Times, serif;
     margin-right: 40px;
     background-color: white;
     padding:35px;
@@ -85,10 +86,12 @@ color:black;
 .columnleftt li{
     margin-bottom: 15px;
     text-align: justify;
+    
 }
 .columnleftt li a{
     text-decoration: none;
     color: black;
+    font-family: 'Times New Roman', Times, serif;
 
 }
 .columnleftt li a:hover{
@@ -104,7 +107,7 @@ color:black;
     margin-left: 80px;
     margin-right: 80px;
     text-align: center;
-    font-family: Verdana;
+    font-family: 'Times New Roman', Times, serif;
 
   
    
@@ -124,14 +127,14 @@ color:black;
     text-align: start;
     text-align: justify;
     font-size: 18px;
-    font-family: verdana;
+    font-family: 'Times New Roman', Times, serif;
     
 
 }
 .styleParagraph p{
     text-align: start;
     text-align: justify;
-    font-family: verdana;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
 }
 .marginBottom{
@@ -158,7 +161,7 @@ color:black;
     font-size: 15px;
     text-align: start;
     text-align: justify;
-    font-family: verdana;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
   
 }
@@ -173,7 +176,7 @@ color:black;
 /* contenedor del titulo y párrafo */
 .divPadre{
    margin-top: 50px;
-   font-family: verdana;
+   font-family: 'Times New Roman', Times, serif;
    margin-left: 65px;
    margin-right: 65px;
    background-color: white;
@@ -202,6 +205,8 @@ color:black;
     margin-left: 80px;
     margin-right: 80px;
     color:slategray;
+    font-family:'Times New Roman', Times, serif;
+
    
 }
 
@@ -235,30 +240,20 @@ color:black;
 
 
 
-
-
-
-
-
 /* ..................APARTADO DE CHAT EN HOME ...................*/
 
-/* Contenedor de la página */
-.chat-page {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
+
 
 /* divide el chat en dos columnas */
 .divTwoColumns{
-    flex-grow: 1;
-
-    background-color:	#e9967a;
+  
+    background-color:	#b8aba6;
     margin:15px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: 280px 1fr;
-}
+  
+} 
 
 /* columna izquierda de contactos */
 .contactsleft{
@@ -266,46 +261,35 @@ color:black;
     margin: 20px;
     border-radius: 20px;
     
-}
+
+} 
 /* columna derecha del chat */
-.chatrigth{
+.chatRigth{
  
     background-color:	#ffe4c4;
     margin:20px;
     border-radius: 20px;
-}
+
+} 
 
 .cardfixed{
-    /* overflow-y: scroll;   */
-     /* height: 70vh;   */
-}
-/* 
-.inputDown{
-    flex-grow: 1;
-} */
-.rest {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    
-   
-    }
+     overflow-y: scroll; 
+     height: 70vh; 
+        }
+
+
 
 /* titulo del chat, columna derecha */
 .card-header {
     display: flex;
     justify-content:start;
     align-items: center;
-    padding: 15px 20px;
     background-color: transparent;
-    border-bottom: 3px solid rgba(26, 27, 27, 0.07);
-    
-}
+} 
 
 
-h4.card-title {
+/* h4.card-title {
     font-size: 32px;
-  
 } 
 
 
@@ -334,29 +318,13 @@ h4.card-title {
     margin: 4px 0;
     background-color: #f5f6f7;
     border-radius: 3px
-}
+} */
 
 /* titulo de la lista de conectados */
-.contactsleft h2{
+/* .contactsleft h2{
     font-size: 32px;
     font-weight: bolder;
-}
-
-/* lista de conectados */
-.conectedList{
-    text-align:justify;
-    font-size:larger;
-    margin-bottom: 12px;
-    
- 
-}
-
-
-
-
-
-
-
+} */
 
 
 

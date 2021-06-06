@@ -18,9 +18,9 @@ export default function router() {
                 <Route path="/forgetpassword" component={ForgetPassword}/>
                 <Route path="/inicio" component={Inicio}/>
                 <Route path="/cuidesusalud" component={CuideSuSalud}/>
-                <Route path="/chat" component={Chat}/>
                 <Route path= "/enlacesinteres" component={EnlacesInteres}/>
-                
+                <Route path="/chat" component={Chat}/>
+               
             </Switch>
         </BrowserRouter>
         </>

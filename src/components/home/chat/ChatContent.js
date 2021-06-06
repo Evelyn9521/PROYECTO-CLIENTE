@@ -1,18 +1,19 @@
 import React from 'react'
 
+
 export default function ChatContent({contacts, messages}) {
 
     return (
-        <div className=" content divTwoColumns" >
-            
+        
+        <div className=" content  divTwoColumns">
             <div className="contactsleft">
                 <h2>Contactos</h2>
                 <ul >
-                    {contacts.map((contact)=> <li className="conectedList">{contact.name}</li>)}
+                    {contacts.map((contact)=> <li>{contact.name}</li>)}
                 </ul>
             </div>
                 
-            <div className="chatrigth ">
+            <div className="chatRigth ">
 
                 <div className="card-header">
                     <h4 className="card-title"><strong>Chat</strong></h4> 
@@ -29,21 +30,21 @@ export default function ChatContent({contacts, messages}) {
                                     <p className="meta"><time>{message.date}</time></p>
                                 </div>
                             </div>
-                    
                             )
                         })
                     }
                 </div>
 
-                <div className="inputDown"> 
+                <div> 
                     <input className="" type="text" placeholder="Escribir un mensaje"/> 
                     <button>Enviar</button>
         
                 </div>
     
             </div>
+            </div>
             
-        </div>
+        
     )
 }
 
