@@ -1,5 +1,5 @@
 import React from 'react'
-import food from "../../../image/food.jpg";
+// import food from "../../../image/food.jpg";
 
 export default function CuideSuSaludContent({food}) {
     return (
@@ -13,7 +13,7 @@ export default function CuideSuSaludContent({food}) {
                 food.map((aliment)=>{
                 return (
                 <div className="card">
-                    <img className="card-img-top imagee" src={food}></img>
+                    {/* <img className="card-img-top imagee" src={food}></img> */}
                     <div className="card-body">
                         <h4 className="card-title">{aliment.name}</h4>
                         <p className="card-text">{aliment.description}</p>

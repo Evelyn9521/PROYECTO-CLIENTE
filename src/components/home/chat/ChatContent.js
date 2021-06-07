@@ -29,11 +29,13 @@ export default function ChatContent({contacts, messages}) {
                                     <p>{message.message}</p>
                                     <p className="meta"><time>{message.date}</time></p>
                                 </div>
+                             
                             </div>
                             )
                         })
                     }
                 </div>
+                
 
                 <div> 
                     <input className="" type="text" placeholder="Escribir un mensaje"/> 

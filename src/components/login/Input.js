@@ -37,6 +37,7 @@ export default function Input() {
             <div className="link">
             <NavLink className="link" exact to="/forgetpassword">¿Has olvidado la contraseña?</NavLink>
             </div>
+            
             <button onClick={()=>handleClick()} className="button2">Crear cuenta nueva</button>
           
         </div>

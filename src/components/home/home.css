@@ -1,5 +1,5 @@
 body{
-    background-color: #f0f0f0;
+    background-color: white;
 }
 .home {
     min-height: 100vh;
@@ -13,6 +13,8 @@ body{
     
     }
 
+/* .............................NAVBAR Y FOTO SUPERIOR............................ */
+/* navbar de la pág home */
 .linksNav{
     width: 100%;
     height:50px ;
@@ -20,25 +22,30 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
-   
 }
 
 .linkk{
     color: white;
-    font-size: 28px;
+    font-size: 22px;
     text-decoration: none;
 }
 .linkk:hover{
 color:black;
 }
 
+/* imagen de fondo, arriba de la navbar */
 .photoPortada{
-    background-image: url(../../image/cancerdemama.jpg);
+    background-image: url(../../image/UpPhoto.png);
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 285px; 
+    height: 270px; 
 } 
+
+
+
+
+/*............................ APARTADO INICIO EN HOME....................... */
 
 /* da estilos a todos los titulos del texto */
 .colors{
@@ -46,10 +53,6 @@ color:black;
     font-weight: bolder;
     font-style:italic;
 }
-
-
-/*............................ APARTADO INICIO EN HOME................. */
-
 
 /* divide la pág en dos columnas */
 .InicioTwoColumns{
@@ -65,7 +68,7 @@ color:black;
    width: 75%;
    margin-left: 20px;
    margin-right: 20px;
-   background-color: white;
+   background-color: #f0f0f0;
    padding: 15px;
    margin-top: 20px;
   border-radius: 50px;
@@ -78,7 +81,7 @@ color:black;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     margin-right: 40px;
-    background-color: white;
+    background-color: #f0f0f0;
     padding:35px;
     border-radius: 50px;
    
@@ -109,10 +112,8 @@ color:black;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
 
-  
-   
-
 }
+
 .title1 h2{
     margin-bottom: 20px;
    text-decoration: 3px underline;
@@ -128,9 +129,8 @@ color:black;
     text-align: justify;
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
-    
-
 }
+
 .styleParagraph p{
     text-align: start;
     text-align: justify;
@@ -144,25 +144,43 @@ color:black;
 
 
 /* .......................APARTADO DE CUIDE SU SALUD EN HOME.................. */
+/* contenedor del titulo y párrafo */
+.divPadre{
+    margin-top: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 65px;
+    margin-right: 65px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 30px;
+    color:black;
+     
+ }
+ .divPadre h2{
+     color:rgb(224, 150, 162) ;
+     font-weight: bolder;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
 
 /* estilos de las cards */
 .card-container {
-    flex-grow: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr ;
     gap: 30px;
-    padding: 40px;
-   
+    padding: 40px;  
    
     
 }
+
 .card-container .card{
     font-size: 15px;
     text-align: start;
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     font-size: 15px;
+    border-radius: 20px;
   
 }
 .card-container .card .card-body h4{
@@ -173,30 +191,14 @@ color:black;
 
 
 
-/* contenedor del titulo y párrafo */
-.divPadre{
-   margin-top: 50px;
-   font-family: 'Times New Roman', Times, serif;
-   margin-left: 65px;
-   margin-right: 65px;
-   background-color: white;
-   border-radius: 20px;
-   padding: 30px;
-   color:black;
-    
-}
-.divPadre h2{
-    color:rgb(224, 150, 162) ;
-    font-weight: bolder;
-}
 
-/* ..............APARTADO ENLACES DE INTERÉS........ */
+
+/* ..........................APARTADO ENLACES DE INTERÉS........................ */
 
 /* divide la pág en 3 columnas después del titulo */
 .threeColumnsButtom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
 }
 
 /* titulo con breve descripción  */
@@ -206,8 +208,6 @@ color:black;
     margin-right: 80px;
     color:slategray;
     font-family:'Times New Roman', Times, serif;
-
-   
 }
 
 .logo2{
@@ -219,7 +219,7 @@ color:black;
 .button5{
     width:280px;
     height: 55px;
-    background-color:#e9967a;
+    background-color:rgb(252, 147, 164);
     border:none;
     border-radius: 20px;
     margin-top: 25px;
@@ -241,9 +241,6 @@ color:black;
 
 
 /* ..................APARTADO DE CHAT EN HOME ...................*/
-
-
-
 /* divide el chat en dos columnas */
 .divTwoColumns{
   
@@ -293,7 +290,7 @@ color:black;
 } 
 
 
-  .media-chat .media-body {
+  .media-body {
     flex: initial;
     display: table
 }  
@@ -304,27 +301,27 @@ color:black;
 
 }
 
- .media-chat.chat-reverse .media-body p {
+ /* .media-chat.chat-reverse .media-body p {
     float: right;
     clear: right;
     background-color: #34cfe4;
     color: #fff;
     font-size: 15px;
     font-weight: bolder;
-} 
+}  */
 
-.media-chat .media-body p {
+/* .media-chat .media-body p {
     padding: 6px 8px;
     margin: 4px 0;
     background-color: #f5f6f7;
     border-radius: 3px
-} */
+}  */
 
-/* titulo de la lista de conectados */
-/* .contactsleft h2{
-    font-size: 32px;
-    font-weight: bolder;
-} */
+.media-body {
+    flex: initial;
+    display: table
+} 
+
 
 
 
