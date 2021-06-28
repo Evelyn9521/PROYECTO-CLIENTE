@@ -1,7 +1,10 @@
 import React from 'react'
-import m5 from "../../image/m5.png";
 import {useHistory} from "react-router-dom";
+import {useForm} from "../../hooks/UseForm";
+import {LOGIN_URL} from "../../config/config";
+import m5 from "../../image/m5.png";
 import {NavLink} from "react-router-dom";
+
 
 export default function Input() {
 
@@ -11,9 +14,28 @@ export default function Input() {
         history.push(`/register`)
     }
 
+    const formInitialState = "";
+    const[form, handleChange]= useForm(formInitialState);
+
+    const handleSubmit= async e=>{
+        e.preventDefault();
+        const options ={
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(form)
+        }
+
+
+        const response = await fetch(LOGIN_URL, options); //se puede utilizar fetch().then().then()
+        const data = await response.json();
+        console.log(data);
+   
+
+
+
     return (
         <div className="">
-           
+           <form onSubmit={handleSubmit} >
             <div>
                 <img  className="logo" src={m5}></img>
             </div>
@@ -22,13 +44,13 @@ export default function Input() {
                 <label className="labell" for="exampleInputEmail1">Usuario</label>
             </div>
 
-            <input type="email" className="input" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
+            <input onChange={handleChange} type="email" className="input" value={form.email} name="email" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
             
             <div>
                 <label className="labell" for="exampleInputEmail1">Contraseña</label>
           
             </div>
-            <input type="password" className="input" id="exampleInputEmail1" placeholder="*****************"></input>
+            <input onChange={handleChange} type="password" className="input" value={form.password} name="password" id="exampleInputEmail1" placeholder="*****************"></input>
             
             <div>
                 <button className="button1">Iniciar Sesión</button>
@@ -39,7 +61,7 @@ export default function Input() {
             </div>
             
             <button onClick={()=>handleClick()} className="button2">Crear cuenta nueva</button>
-          
+            </form>
         </div>
     )
-}
+    }}
