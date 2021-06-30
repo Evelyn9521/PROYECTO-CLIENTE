@@ -2,6 +2,16 @@ import React from 'react'
 // import food from "../../../image/food.jpg";
 
 export default function CuideSuSaludContent({food}) {
+
+
+    // useEffect(() => {
+
+    //     const API_URL=""
+    //     fetch(API_URL)
+    //       .then(response => response.json())
+    //       .then(data => setMovies(data.results));
+    //   }, []);
+
     return (
         <div className="divPadre content">
             <h2>Alimentos para prevenir el cancer</h2>

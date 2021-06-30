@@ -20,6 +20,7 @@ export default function router() {
                 <Route path="/cuidesusalud" component={CuideSuSalud}/>
                 <Route path= "/enlacesinteres" component={EnlacesInteres}/>
                 <Route path="/chat" component={Chat}/>
+              
                
             </Switch>
         </BrowserRouter>

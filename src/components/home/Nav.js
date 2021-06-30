@@ -11,7 +11,7 @@ export default function Nav() {
             <NavLink className="linkk" activeClassName= "text-dark" exact to="/enlacesinteres">Enlaces de interés</NavLink>
             <NavLink className="linkk" activeClassName= "text-dark" exact to="/chat">Chat</NavLink>
             <a target="_blank" className="linkk" activeClassName= "text-dark" href="https://www.aecc.es/es/colabora/dona">Colabora</a>
-           <NavLink className="linkk" activeClassName= "text-dark" exact to=""><FontAwesomeIcon icon={faPowerOff}/></NavLink>
+           <NavLink className="linkk" activeClassName= "text-dark" exact to="/"><FontAwesomeIcon icon={faPowerOff}/></NavLink>
 
         </div>
     )
