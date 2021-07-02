@@ -7,6 +7,7 @@ import Inicio from "../home/Inicio/Inicio"
 import CuideSuSalud from "../home/cuideSuSalud/CuideSuSalud"
 import EnlacesInteres from "../home/enlacesInteres/EnlacesInteres";
 import Chat from "../home/chat/Chat"
+import Editar from '../home/editarUsuario/Editar';
 
 export default function router() {
     return (
@@ -20,6 +21,7 @@ export default function router() {
                 <Route path="/cuidesusalud" component={CuideSuSalud}/>
                 <Route path= "/enlacesinteres" component={EnlacesInteres}/>
                 <Route path="/chat" component={Chat}/>
+                <Route path="/editar" component={Editar}/>
               
                
             </Switch>

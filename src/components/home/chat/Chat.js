@@ -30,7 +30,7 @@ export default function Chat() {
       const [contacts, setContacts] = useState(users)
 
     return (
-        <div className="home" >
+        <div className="home photoChat" >
         
             <Nav/>
             <ChatContent messages={messages} setMessages={setMessages} contacts={contacts} setContacts={setContacts}/>

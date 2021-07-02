@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faPowerOff} from "@fortawesome/free-solid-svg-icons";
+import {faPowerOff, faUserEdit} from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
     return (
@@ -11,8 +11,9 @@ export default function Nav() {
             <NavLink className="linkk" activeClassName= "text-dark" exact to="/enlacesinteres">Enlaces de interés</NavLink>
             <NavLink className="linkk" activeClassName= "text-dark" exact to="/chat">Chat</NavLink>
             <a target="_blank" className="linkk" activeClassName= "text-dark" href="https://www.aecc.es/es/colabora/dona">Colabora</a>
+            <NavLink className="linkk" activeClassName= "text-dark" exact to="/editar"><FontAwesomeIcon icon={faUserEdit}/></NavLink>
            <NavLink className="linkk" activeClassName= "text-dark" exact to="/"><FontAwesomeIcon icon={faPowerOff}/></NavLink>
-
+          
         </div>
     )
 }

@@ -1,16 +1,17 @@
 import React from 'react'
-// import food from "../../../image/food.jpg";
+import {useEffect, useState} from "react";
 
-export default function CuideSuSaludContent({food}) {
+export default function CuideSuSaludContent() {
 
+    const [food, setFood] = useState([])
 
-    // useEffect(() => {
+    useEffect(() => {
 
-    //     const API_URL=""
-    //     fetch(API_URL)
-    //       .then(response => response.json())
-    //       .then(data => setMovies(data.results));
-    //   }, []);
+        const API_URL="http://localhost:3004/api2/recipes"
+        fetch(API_URL)
+          .then(response => response.json())
+          .then(data => setFood(data.recipes));
+      }, []);
 
     return (
         <div className="divPadre content">
@@ -20,13 +21,14 @@ export default function CuideSuSaludContent({food}) {
        
         <div className="card-container">
             {
-                food.map((aliment)=>{
+                food.map((recipes)=>{
                 return (
                 <div className="card">
-                    {/* <img className="card-img-top imagee" src={food}></img> */}
+                    <img className="imgRecipes" src={"http://localhost:3004/" + recipes.image} /> 
                     <div className="card-body">
-                        <h4 className="card-title">{aliment.name}</h4>
-                        <p className="card-text">{aliment.description}</p>
+                        <h4 className="card-title">{recipes.name}</h4>
+                        <p >{recipes.description}</p>
+                        
                     </div>
                 </div>
                 )
