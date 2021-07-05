@@ -1,7 +1,7 @@
 import React from 'react'
 import { useForm } from "../../hooks/UseForm";
 import { REGISTER } from "../../config/config";
-import {useHistory} from "react-router-dom";
+// import {useHistory} from "react-router-dom";
 
 export default function Form() {
     const formInitialState = { name: '', lastname: '', email:'', password:"" };; 

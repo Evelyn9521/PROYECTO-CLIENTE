@@ -1,10 +1,17 @@
 import React from 'react'
-// import {useState} from "react-router-dom";
+//import {useState} from "react-router-dom";
 
 export default function EditarContent() {
+    // const {loginUser} = useAuthContext();
+    // const [editing, setEditing] = useState(false)
 
-    // const [editando, setEditando] = useState(false);
-
+    // const initialFormState = { id: null, name: '', lastname: '', email:'', password:'' }
+    // const [currentUser, setCurrentUser] = useState(initialFormState)
+  
+    // const updateUser = user => {
+    //   setEditing(true) 
+    //   setCurrentUser({ id: user.id, name: user.name, username: user.username })
+    // }
 
    
        
@@ -25,7 +32,7 @@ export default function EditarContent() {
 
                 <div className="marginInput">
                     <label for="exampleInputEmail1"></label>
-                    <input type="email" id="exampleInputEmail1" placeholder="Correo electrónico" disabled></input>
+                    <input type="email" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
                 </div>
 
                 <div className="marginInput">

@@ -9,9 +9,7 @@ export default function ChatContent({contacts, messages}) {
         <section class="body-chat content ">
 
             <div class="seccion-usuarios">
-                <div class="seccion-buscar">
                     <h4>Usuarios Conectados</h4>
-                </div>
                 <div class="seccion-lista-usuarios">
                         <div class="cuerpo">
                             <span> Nombre</span>

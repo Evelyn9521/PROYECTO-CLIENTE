@@ -8,6 +8,7 @@ import CuideSuSalud from "../home/cuideSuSalud/CuideSuSalud"
 import EnlacesInteres from "../home/enlacesInteres/EnlacesInteres";
 import Chat from "../home/chat/Chat"
 import Editar from '../home/editarUsuario/Editar';
+import PrivateRoute from "../../privateRoute/PrivateRoute";
 
 export default function router() {
     return (
@@ -15,14 +16,13 @@ export default function router() {
         <BrowserRouter>
             <Switch>
                 <Route  exact path="/" component={Login}/>
-                <Route path="/register" component={Register}/>
-                <Route path="/forgetpassword" component={ForgetPassword}/>
-                <Route path="/inicio" component={Inicio}/>
-                <Route path="/cuidesusalud" component={CuideSuSalud}/>
-                <Route path= "/enlacesinteres" component={EnlacesInteres}/>
-                <Route path="/chat" component={Chat}/>
-                <Route path="/editar" component={Editar}/>
-              
+                <PrivateRoute path="/register" component={Register}/>
+                <PrivateRoute path="/forgetpassword" component={ForgetPassword}/>
+                <PrivateRoute path="/inicio"> <Inicio/></PrivateRoute>
+                <PrivateRoute path="/cuidesusalud"><CuideSuSalud/></PrivateRoute>
+                <PrivateRoute path= "/enlacesinteres"><EnlacesInteres/> </PrivateRoute>
+                <PrivateRoute path="/chat"><Chat/></PrivateRoute>
+                <PrivateRoute path="/editar"><Editar/></PrivateRoute>
                
             </Switch>
         </BrowserRouter>
