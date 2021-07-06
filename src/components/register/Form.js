@@ -1,6 +1,7 @@
 import React from 'react'
 import { useForm } from "../../hooks/UseForm";
 import { REGISTER } from "../../config/config";
+import swal from "sweetalert";
 // import {useHistory} from "react-router-dom";
 
 export default function Form() {
@@ -24,6 +25,11 @@ export default function Form() {
         const response = await fetch(REGISTER, options);
         const data = await response.json();
         console.log(data);
+
+        if(response.status >=200 && response.status < 300){
+          
+            swal("Usuario registrado correctamente, ya puede Iniciar Sesión")
+        }
     }
 
 

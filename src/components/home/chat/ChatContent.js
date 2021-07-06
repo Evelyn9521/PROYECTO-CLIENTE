@@ -1,6 +1,6 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faComments, faTimes, faUsers, faClock, faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+import {faComments, faClock, faPaperPlane} from "@fortawesome/free-solid-svg-icons";
 
 
 

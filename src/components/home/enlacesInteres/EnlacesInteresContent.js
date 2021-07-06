@@ -12,17 +12,17 @@ export default function EnlacesInteresContent() {
             <div className="threeColumnsButtom">
            
                 <div className="columnButtomLeft">
-                    <div><a className="letterLink" target="_blank" href="https://www.oysho.com/es/lencer%C3%ADa/sujetadores/sujetadores-post-operatorio-c1010352013.html"><button className="button5">Oysho</button></a></div>
-                    <div><a className="letterLink" target="_blank" href="https://pilarmartinezpostmastectomia.es/"><button className="button5">Pilar Martínez, Boutique</button></a></div>
-                    <div><a className="letterLink" target="_blank" href="https://www.amoena.com/es/"><button className="button5">Amoena</button></a></div>
+                    <div><a className="letterLink" target="_blank" rel="noreferrer" href="https://www.oysho.com/es/lencer%C3%ADa/sujetadores/sujetadores-post-operatorio-c1010352013.html"><button className="button5">Oysho</button></a></div>
+                    <div><a className="letterLink" target="_blank" rel="noreferrer" href="https://pilarmartinezpostmastectomia.es/"><button className="button5">Pilar Martínez, Boutique</button></a></div>
+                    <div><a className="letterLink" target="_blank" rel="noreferrer" href="https://www.amoena.com/es/"><button className="button5">Amoena</button></a></div>
                 </div>
                 <div>
-                    <img className="logo2" src={m5}></img>
+                    <img className="logo2" alt="" src={m5}></img>
                 </div>
                 <div className="columnButtomRight">
-                <div><a className="letterLink" target="_blank" href="https://www.boutique-cancer-de-mama.es/"><button className="button5">Boutique, Cáncer de mama</button></a></div>
-                <div><a className="letterLink" target="_blank" href="https://womensecret.com/es/es/colecciones/post-surgery"><button className="button5">Women Secret</button></a></div>
-                <div><a className="letterLink" target="_blank" href="https://www.divinaoncobeauty.com/44-banadores-mastectomia"><button className="button5">Divina Onco Beauty</button></a></div>
+                <div><a className="letterLink" target="_blank" rel="noreferrer" href="https://www.boutique-cancer-de-mama.es/"><button className="button5">Boutique, Cáncer de mama</button></a></div>
+                <div><a className="letterLink" target="_blank" rel="noreferrer" href="https://womensecret.com/es/es/colecciones/post-surgery"><button className="button5">Women Secret</button></a></div>
+                <div><a className="letterLink" target="_blank" rel="noreferrer" href="https://www.divinaoncobeauty.com/44-banadores-mastectomia"><button className="button5">Divina Onco Beauty</button></a></div>
                
                 </div>
 

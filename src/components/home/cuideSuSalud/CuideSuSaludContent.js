@@ -25,7 +25,7 @@ export default function CuideSuSaludContent() {
                 food.map((recipes)=>{
                 return (
                 <div className="card">
-                    <img className="imgRecipes" src={"http://localhost:3004/" + recipes.image} /> 
+                    <img className="imgRecipes" alt="" src={"http://localhost:3004/"  + recipes.image} /> 
                     <div className="card-body">
                         <h4 className="card-title">{recipes.name}</h4>
                         <p >{recipes.description}</p>

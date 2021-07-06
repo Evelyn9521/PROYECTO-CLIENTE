@@ -1,41 +1,7 @@
 import React from 'react'
-import { useEffect, useState } from "react"
-import { Redirect } from "react-router"
-import { PRIVATE_URL } from "../../../config/config";
-import { useAuthContext } from "../../../context/AuthContext";
 
 export default function InicioContent() {
-    const {getAuthHeaders, loginUser} = useAuthContext();
-    const [privateMessage, setPrivateMessage] = useState("");
-
-    useEffect(() => {
-        const options = {headers: getAuthHeaders()};
-        
-        fetch(PRIVATE_URL, options)
-        .then(response => {
-            /**
-             * Si hay algun error (no autorizado, token inválido...) lanzamos un error
-             * para que no se procesen los datos y caiga en el catch. Si va
-             * todo bien, procesamos los datos como siempre.
-             */
-            if(!response.ok) throw new Error(response.statusText)
-            return response.json();
-        })
-        .then(data => setPrivateMessage(data.message))
-        .catch(error => {
-            /**
-             * Si ha habido problemas con el acceso a los datos privados, cerramos la sesión 
-             * y redirigimos el usuario al login.
-             */
-            console.error(error); // Los console.log están prohibidos en producción!
-            
-        });
-
-        // El siguiente comentario (eslint...) es para deshabilitar el warning de "missing dependencies"
-        // ya que no necesitamos incluir las dependencias que nos pide en este caso.
-
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+ 
     return (
         <div className=" content imgBackground">
 
@@ -56,10 +22,10 @@ export default function InicioContent() {
                 </ul>
                 <div className="columnrigth">
                     <div className="title1">
-                        <h2>Acerca del cáncer de mama {loginUser?.email}</h2>
+                        <h2>Acerca del cáncer de mama </h2>
                         <h4>Acceda a información básica sobre el cáncer de mama, 
                             como en qué consiste y cómo se origina, así como los signos y 
-                            síntomas de esta enfermedad.{privateMessage} </h4>
+                            síntomas de esta enfermedad. </h4>
                     </div>
 
                     <div className="styleParagraph marginBottom">

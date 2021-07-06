@@ -34,9 +34,8 @@ export default function Input() {
           signIn(data.token, data.user);
           history.push("/inicio")
         }else {
-            alert("login incorrecto")
+            alert("contraseña o usuario incorrectos")
         }
-       
     };
 
 
@@ -44,7 +43,7 @@ export default function Input() {
         <div className="">
             <form onSubmit={handleSubmit} >
                 <div>
-                    <img className="logo" src={m5}></img>
+                    <img className="logo" alt="" src={m5}></img>
                 </div>
 
                 <div>

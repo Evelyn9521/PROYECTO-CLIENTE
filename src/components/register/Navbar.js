@@ -9,18 +9,9 @@ export default function Navbar() {
 
 
     return (
-            <div className="topnav">
-               
-               <button className="buttonNav"><NavLink className="logoLeft" exact to="/">MQL<FontAwesomeIcon className="ribbon" icon={faRibbon} ></FontAwesomeIcon></NavLink> </button>
-               
-                <div className="login-container">
-                        
-                        <input className="input2 " type="text" placeholder="Correo electrónico" />
-                        <input className="input2" type="text" placeholder="Contraseña" />
-                    
-                    <button>Entrar</button>
-                </div>
-            </div>
+        <div className="topnav">
+            <button className="buttonNav"><NavLink className="logoLeft" exact to="/">INICIAR SESIÓN<FontAwesomeIcon className="ribbon" icon={faRibbon} ></FontAwesomeIcon></NavLink> </button>
+        </div>
           
     )
 }
