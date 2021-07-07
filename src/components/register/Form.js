@@ -2,16 +2,12 @@ import React from 'react'
 import { useForm } from "../../hooks/UseForm";
 import { REGISTER } from "../../config/config";
 import swal from "sweetalert";
-// import {useHistory} from "react-router-dom";
+
 
 export default function Form() {
     const formInitialState = { name: '', lastname: '', email:'', password:"" };; 
     const [form, handleChange] = useForm(formInitialState);
-    // const history = useHistory();
-
-    // function handleClick() {
-    //     history.push(`/`)
-    // }
+  
 
     const handleSubmit = async e => {
         e.preventDefault();
@@ -28,7 +24,17 @@ export default function Form() {
 
         if(response.status >=200 && response.status < 300){
           
-            swal("Usuario registrado correctamente, ya puede Iniciar Sesión")
+            swal(
+                'Usuario Registrado Correctamente!',
+                'ya puede iniciar sesión!',
+                'success'
+              )
+        }else{
+            swal(
+                'La contraseña debe tener más de 8 carácteres',
+                'vuelve a intentarlo',
+                'warning'
+            )
         }
     }
 
