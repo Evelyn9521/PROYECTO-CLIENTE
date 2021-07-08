@@ -10,9 +10,8 @@ import Chat from "../home/chat/Chat"
 import Editar from '../home/editarUsuario/Editar';
 import PrivateRoute from "../../privateRoute/PrivateRoute";
 
-export default function router() {
+export default function Router() {
     return (
-        <>
         <BrowserRouter>
             <Switch>
                 <Route  exact path="/" component={Login}/>
@@ -26,6 +25,6 @@ export default function router() {
                
             </Switch>
         </BrowserRouter>
-        </>
+        
     )
 }

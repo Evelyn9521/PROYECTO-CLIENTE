@@ -4,7 +4,7 @@ import { LOGIN_URL } from "../../config/config";
 import m5 from "../../image/m5.png";
 import { NavLink } from "react-router-dom";
 import {useAuthContext} from "../../context/AuthContext";
-import swal from "sweetalert";
+// import swal from "sweetalert";
 
 export default function Input() {
 
@@ -35,11 +35,11 @@ export default function Input() {
           signIn(data.token, data.user);
           history.push("/inicio")
         }else {
-            swal(
-                'Contraseña o Usuario incorrectos!',
-                'vuelve a intentarlo!',
-                'warning'
-              )
+            // swal(
+            //     'Contraseña o Usuario incorrectos!',
+            //     'vuelve a intentarlo!',
+            //     'warning'
+            //   )
         }
     };
 

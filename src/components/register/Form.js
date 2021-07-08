@@ -29,13 +29,19 @@ export default function Form() {
                 'ya puede iniciar sesión!',
                 'success'
               )
-        }else{
+        }else if (form.password < "8"){
             swal(
-                'La contraseña debe tener más de 8 carácteres',
+                'La contraseña debe tener 8 o más carácteres',
                 'vuelve a intentarlo',
                 'warning'
             )
-        }
+         }else if(form.email ===  data.email){
+            swal(
+                'email ya existente',
+                'Usa otro',
+                'warning'
+            )
+         }
     }
 
 
