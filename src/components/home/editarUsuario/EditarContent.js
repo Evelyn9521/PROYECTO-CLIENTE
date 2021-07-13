@@ -15,6 +15,7 @@ export default function EditarContent() {
     
     const handleSubmit = async e => {
         e.preventDefault();
+        console.log(form);
 
         const options = {
             method: "PUT",
@@ -31,32 +32,32 @@ export default function EditarContent() {
                 'Usuario actualizado correctamente!',
                 '',
                 'success'
-              )
+         )
         }
     }
     
 
     const handleDelete = async () => {
+        console.log(form);
         const options = {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(form)
+          
         }
 
         const response = await fetch(DELETE_USER + loginUser._id, options);
-        const data = await response.json();
-        console.log(data)
- 
-        if(response.data === 204 ){
-            signOut();
+        console.log("response:", response);
+        
+        if(response.status === 204 ){
+          
+              signOut();
             history.push("/")
           
         }
          
     }
 
- 
-          
+
     return (
         <>
         <form onSubmit={handleSubmit} className="flex-grow photo2 ">
@@ -83,11 +84,10 @@ export default function EditarContent() {
                 </div>
                 
                 <button type="submit" className="button3">Guardar cambios</button>
-                
+                <button type="button"  onClick={(()=>handleDelete())} className="button3">Eliminar cuenta</button> 
             </div>
-            
         </form>
-        <button  onClick={handleDelete} className="button3">Eliminar cuenta</button> 
+       
         </>
     )
 }

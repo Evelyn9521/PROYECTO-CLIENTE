@@ -1,9 +1,10 @@
 body{
     background-color: white;
+    height: 100%;
 }
 .home {
     min-height: 100vh;
-    
+  
      display: flex;
     flex-direction: column;
     }
@@ -253,22 +254,11 @@ border-radius: 20px;
 
 /* ..................APARTADO DE CHAT EN HOME ...................*/
 
-.photoChat{
-    background-image: url("../../image/Azul\ Marino\ Ciudad\ Foto\ Motivación\ Frase\ Inspiración\ Fondo\ de\ Pantalla.png");
-}
 .body-chat {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: #fff;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1080px;
-    border-radius: 8px;
-    display: flex;
-    align-content: center;
-   border: 3px solid rgb(158, 156, 156);
- 
+    
 }
 
 .seccion-usuarios {
@@ -276,20 +266,23 @@ border-radius: 20px;
     margin-right: 1.5rem;
     border-right: 4px solid #E7E7E7;
     padding-right: 15px;
+    
 }
 
 .mensaje .avatar {
     width: 35px;
     margin-right: 1rem;
+   
 }
 .mensaje.left .avatar {
     margin-right: 0;
     margin-left: 1rem;
 }
 
+/* 
 .usuario .cuerpo span {
     display: block;
-}
+} */
 
 
 /* seccion chat */
@@ -310,6 +303,7 @@ border-radius: 20px;
 .usuario-seleccionado .cuerpo {
     flex-grow: 1;
     flex-basis: 0;
+   
 }
 
 
@@ -319,16 +313,17 @@ border-radius: 20px;
     overflow-y: auto;
     padding-right: 15px;
     margin-bottom: 280px;
+    overflow-y: scroll;
+   
 }
 .mensaje {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2.5rem;
     justify-content: flex-start;
+   
 }
-.mensaje.left {
-    justify-content: flex-end;
-}
+
 
 .mensaje .cuerpo {
     font-size: 0.85em;
@@ -337,6 +332,7 @@ border-radius: 20px;
     border-radius: 8px;
     position: relative;
     width: calc(100% - 35px - 1rem - 5rem);
+    margin-bottom: 10px;
 }
 
 .mensaje .texto {

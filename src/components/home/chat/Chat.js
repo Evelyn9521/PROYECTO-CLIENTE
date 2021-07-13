@@ -9,7 +9,7 @@ export default function Chat() {
 
   
     return (
-        <div className="home photoChat" >
+        <div className="home " >
 
             <Nav/>
             <ChatContent/>
