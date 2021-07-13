@@ -10,7 +10,7 @@ export default function Chat() {
   
     return (
         <div className="home photoChat" >
-        
+
             <Nav/>
             <ChatContent/>
             <Footer/>

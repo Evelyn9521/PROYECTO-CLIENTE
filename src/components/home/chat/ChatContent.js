@@ -1,49 +1,54 @@
 import React from 'react'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faPaperPlane} from "@fortawesome/free-solid-svg-icons";
+import { faPaperPlane, faUser} from "@fortawesome/free-solid-svg-icons";
 import {useAuthContext} from "../../../context/AuthContext";
 import { useState, useEffect, useRef } from "react";
 import socket from "./socketio";
 
 
 export default function ChatContent() {
-        const {loginUser} = useAuthContext();
-        const [mensaje, setMensaje] = useState("");
-        const [mensajes, setMensajes] = useState([]);
-      let nombre;
+
+    const {loginUser} = useAuthContext();
+    const userConected = loginUser.name
+
+    const [mensaje, setMensaje] = useState(""); //cada mensaje que escribe el usuario
+    const [mensajes, setMensajes] = useState([]); //Array con todos los mensajes del chat
+
+     
         useEffect(() => {
-          socket.emit("conectado", nombre);
-        }, [nombre]);
+          socket.emit("conectado", userConected); //cuando se conecte un usuario que aparezca su nombre
+        }, [userConected]);
       
         useEffect(() => {
-          socket.on("mensajes", (mensaje) => {
+          socket.on("mensajes", (mensaje) => { //queremos capturar el mensaje y enviarlo al servidor
             setMensajes([...mensajes, mensaje]);
           });
       
           return () => {
-            socket.off();
+            socket.off(); //para que no entre en bucle y colapse la app
           };
         }, [mensajes]); 
       
         const divRef = useRef(null);
         useEffect(() => {
-          divRef.current.scrollIntoView({ behavior: "smooth" });
+          divRef.current.scrollIntoView({ behavior: "smooth" }); //hace que aparezca el ultimo mensaje del chat, sin tener que hacer scroll hacia abajo
         });
       
         const submit = (e) => {
           e.preventDefault();
-          socket.emit("mensaje", nombre, mensaje);
+          socket.emit("mensaje", userConected, mensaje); //enviamos la informacion al servidor con el mensaje
           setMensaje("");
         };
+
     return(
         <section class="body-chat content ">
 
             <div class="seccion-usuarios">
-                    <h4>Usuarios Conectados</h4>
+                    <h4>Usuarios en la Sala </h4>
                 <div class="seccion-lista-usuarios">
-                        <div class="cuerpo">
-                            <span> Nombre</span>
-                        </div>
+                    <div class="cuerpo">
+                        <span> <FontAwesomeIcon icon={faUser}/>{userConected}</span>
+                    </div>
                 </div>
             </div>
             
@@ -55,26 +60,24 @@ export default function ChatContent() {
                 </div>
 
                 <div class="panel-chat">
-                    
                     <div class="mensaje">
                         {mensajes.map((e, i)=> (
                            
                             <div class="cuerpo"> 
-                             <div class="avatar">{loginUser.nombre}</div>
-                                <div class="texto">{loginUser.mensaje}
+                             <div  class="avatar">{e.userConected}</div>
+                                <div key={i} class="texto">{e.mensaje}
                                     {/* <span class="tiempo"><FontAwesomeIcon icon={faClock}/>Hace 5 min</span> */}
                                 </div>
                             </div>
                         ))}
-                        
                         <div ref={divRef}></div>
                     </div>
-
-                    {/* derecha */}
+                </div>
+                     {/* derecha */}
                     {/* <div class="mensaje left">
                         <div class="cuerpo">
                             <div class="texto">
-                                Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Dolor eligendi voluptatum dolore voluptas iure.
+                                Lorem ipsum dolor sit, . e voluptas iure.
                                 <span class="tiempo"><FontAwesomeIcon icon={faClock}/>Hace 6 min</span>
                             </div>
                         </div>
@@ -83,7 +86,6 @@ export default function ChatContent() {
                         <FontAwesomeIcon icon={faComments}/>
                         </div>
                     </div> */}
-                </div>
 
                 <div class="panel-escritura">
                     <form onSubmit={submit} class="textarea">
@@ -95,50 +97,7 @@ export default function ChatContent() {
         </section>
     )
 
-    // return (
-        
-    //     <div className=" content  divTwoColumns">
-    //         <div className="contactsleft">
-    //             <h2>Contactos</h2>
-    //             <ul >
-    //                 {contacts.map((contact)=> <li>{contact.name}</li>)}
-    //             </ul>
-    //         </div>
-                
-    //         <div className="chatRigth ">
 
-    //             <div className="card-header">
-    //                 <h4 className="card-title"><strong>Chat</strong></h4> 
-    //             </div>
-                            
-    //             <div className="cardfixed" >
-    //                 { 
-    //                     messages.map((message)=>{
-    //                     return(
-    //                         <div className="media media-chat chat-reverse">
-    //                             <div className="media-body">
-    //                                 <p>{message.name}</p>
-    //                                 <p>{message.message}</p>
-    //                                 <p className="meta"><time>{message.date}</time></p>
-    //                             </div>
-                             
-    //                         </div>
-    //                         )
-    //                     })
-    //                 }
-    //             </div>
-                
 
-    //             <div> 
-    //                 <input className="" type="text" placeholder="Escribir un mensaje"/> 
-    //                 <button>Enviar</button>
-        
-    //             </div>
-    
-    //         </div>
-    //         </div>
-            
-        
-    // )
 }
 

@@ -16,7 +16,7 @@ export default function CuideSuSaludContent() {
 
     return (
         <div className="divPadre content">
-            <h2>Alimentos para prevenir el cancer</h2>
+            <h2>Alimentos para prevenir el cáncer</h2>
             <p>Una alimentación basada en la dieta mediterránea podría llegar a reducir un 30% el riesgo de padecer cáncer de mama. Los pilares de esta dieta son verduras, frutas, legumbres, pescado y aceite de oliva y, según el estudio, todos ellos se asocian con un menor riesgo de sufrir esta dolencia de la que, sólo en España, se detectan 26.000 casos cada año.</p>
             <p>Estos son algunos de los alimentos ricos en antioxidantes, vitaminas, fibras naturales y minerales cuyo consumo habitual puede contribuir a una prevención eficaz del desarrollo del cáncer:</p>
        
