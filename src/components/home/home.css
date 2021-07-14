@@ -1,16 +1,19 @@
 body{
     background-color: white;
-    height: 100%;
+ 
+    
 }
 .home {
     min-height: 100vh;
   
      display: flex;
     flex-direction: column;
+   
     }
     
 .content {
     flex-grow: 1;
+    
     
     }
 
@@ -254,15 +257,16 @@ border-radius: 20px;
 
 /* ..................APARTADO DE CHAT EN HOME ...................*/
 
-.body-chat {
+ .body-chat {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     
+    
 }
 
 .seccion-usuarios {
-    width: 300px;
+  
     margin-right: 1.5rem;
     border-right: 4px solid #E7E7E7;
     padding-right: 15px;
@@ -277,18 +281,18 @@ border-radius: 20px;
 .mensaje.left .avatar {
     margin-right: 0;
     margin-left: 1rem;
-}
+} 
 
-/* 
 .usuario .cuerpo span {
     display: block;
-} */
+} 
 
 
 /* seccion chat */
 .seccion-chat {
     flex-basis: 0;
     flex-grow: 1;
+    
 }
 
 .usuario-seleccionado {
@@ -303,6 +307,7 @@ border-radius: 20px;
 .usuario-seleccionado .cuerpo {
     flex-grow: 1;
     flex-basis: 0;
+    
    
 }
 
@@ -313,7 +318,8 @@ border-radius: 20px;
     overflow-y: auto;
     padding-right: 15px;
     margin-bottom: 280px;
-    overflow-y: scroll;
+  
+    height: 70vh;
    
 }
 .mensaje {

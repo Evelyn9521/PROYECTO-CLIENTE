@@ -28,11 +28,14 @@ export default function EditarContent() {
         console.log(data);
 
         if(response.status >=200 && response.status < 300){
+
             swal(
                 'Usuario actualizado correctamente!',
                 '',
-                'success'
-         )
+                'success',    
+            )
+            signOut();
+            history.push("/")
         }
     }
     
@@ -41,25 +44,21 @@ export default function EditarContent() {
         console.log(form);
         const options = {
             method: "DELETE",
-            headers: { "Content-Type": "application/json" },
-          
+            headers: { "Content-Type": "application/json" }  
         }
 
         const response = await fetch(DELETE_USER + loginUser._id, options);
-        console.log("response:", response);
         
         if(response.status === 204 ){
           
               signOut();
             history.push("/")
-          
         }
-         
     }
 
 
     return (
-        <>
+    
         <form onSubmit={handleSubmit} className="flex-grow photo2 ">
             <div>
                 <h2 className="title">EDITA TU CUENTA </h2>
@@ -88,6 +87,6 @@ export default function EditarContent() {
             </div>
         </form>
        
-        </>
+    
     )
 }

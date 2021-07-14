@@ -1,7 +1,7 @@
 import { useHistory, Redirect } from "react-router-dom";
 import { useForm } from "../../hooks/UseForm";
 import { LOGIN_URL } from "../../config/config";
-import m5 from "../../image/m5.png";
+import img2 from "../../image/img2.png"
 import { NavLink } from "react-router-dom";
 import {useAuthContext} from "../../context/AuthContext";
 import swal from "sweetalert";
@@ -48,7 +48,7 @@ export default function Input() {
         <div className="">
             <form onSubmit={handleSubmit} >
                 <div>
-                    <img className="logo" alt="" src={m5}></img>
+                    <img className="logo" alt="" src={img2}></img>
                 </div>
 
                 <div>

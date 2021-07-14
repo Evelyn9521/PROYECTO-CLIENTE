@@ -150,8 +150,9 @@ export default function InicioContent() {
 
                     <div  >
                         <div><h2>Video explicativo</h2></div>
+                        
                         <div className="video"> <ReactPlayer url='https://youtu.be/i2I_qfJjJSY' /></div>
-                       
+                        
                     </div>
                 </div>
             </div>

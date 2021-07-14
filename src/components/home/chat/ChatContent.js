@@ -10,7 +10,8 @@ export default function ChatContent() {
 
     const {loginUser} = useAuthContext();
     const userConected = loginUser.name
-    const [conectedUsers, setConectedUsers] =useState([])
+
+    const [conectedUsers, setConectedUsers] = useState([])
     const [mensaje, setMensaje] = useState(""); //cada mensaje que escribe el usuario
     const [mensajes, setMensajes] = useState([]); //Array con todos los mensajes del chat
 
