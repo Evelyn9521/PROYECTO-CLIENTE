@@ -14,19 +14,20 @@ export default function ChatContent() {
     const [conectedUsers, setConectedUsers] = useState([])
     const [mensaje, setMensaje] = useState(""); //cada mensaje que escribe el usuario
     const [mensajes, setMensajes] = useState([]); //Array con todos los mensajes del chat
-
+    const [newUserConected, setNewUserConected] =useState(false);
      
         useEffect(() => {
             const conectedUsers= JSON.parse( localStorage.getItem("conectedUsers")==null?"[]":localStorage.getItem("conectedUsers"))
             if(conectedUsers.indexOf(userConected) === -1){
                 conectedUsers.push(userConected)
+                setNewUserConected(true)
             }
             setConectedUsers(conectedUsers)
             localStorage.setItem("conectedUsers",JSON.stringify(conectedUsers))
 
 
           socket.emit("conectado", userConected); //cuando se conecte un usuario que aparezca su nombre
-        }, [userConected]);
+        }, [userConected, newUserConected]);
       
         useEffect(() => {
           socket.on("mensajes", (mensaje) => { //queremos capturar el mensaje y enviarlo al servidor
@@ -50,41 +51,41 @@ export default function ChatContent() {
         };
 
     return(
-        <div class="body-chat content ">
+        <div className="body-chat content ">
 
-            <div class="seccion-usuarios">
+            <div className="seccion-usuarios">
                     <h4>Usuarios en la Sala </h4>
-                <div class="seccion-lista-usuarios">
-                    {conectedUsers.map(userConected=>( <div class="cuerpo">
-                        <span> <FontAwesomeIcon icon={faUser}/>{userConected}</span>
+                <div className="seccion-lista-usuarios">
+                    {conectedUsers.map(userConected=>( <div className="cuerpo">
+                        <span> <FontAwesomeIcon icon={faUser}/>&nbsp;{userConected}</span>
                     </div>))}
                    
                 </div>
             </div>
             
-            <div class="seccion-chat">
-                <div class="usuario-seleccionado">
-                    <div class="cuerpo seccion-titulo">
+            <div className="seccion-chat">
+                <div className="usuario-seleccionado">
+                    <div className="cuerpo seccion-titulo">
                         <h3>chat</h3>
                     </div>
                 </div>
 
-                <div class="panel-chat">
-                    <div class="mensaje">
+                <div className="panel-chat">
+                    <div className="mensaje">
                         {mensajes.map((e, i)=> (
-                            <div class="cuerpo"> 
-                             <div  class="avatar">{e.nombre}</div>
-                                <div key={i} class="texto">{e.mensaje}</div>
+                            <div className="cuerpo" align={e.nombre===userConected? "right":"left"}> 
+                             <div  className="avatar">{e.nombre}</div>
+                                <div key={i} className="texto">{e.mensaje}</div>
                             </div>
                         ))}
                         <div ref={divRef}></div>
                     </div>
                 </div>
 
-                <div class="panel-escritura">
-                    <form onSubmit={submit} class="textarea">
+                <div className="panel-escritura">
+                    <form onSubmit={submit} className="textarea">
                         <textarea value={mensaje} onChange={(e) => setMensaje(e.target.value)} placeholder="Escribir mensaje"></textarea>
-                        <button  type="submit" class="enviar"><FontAwesomeIcon icon={faPaperPlane}/></button>
+                        <button  type="submit" className="enviar"><FontAwesomeIcon icon={faPaperPlane}/></button>
                     </form>
                 </div>
             </div>

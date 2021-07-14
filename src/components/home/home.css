@@ -264,6 +264,9 @@ border-radius: 20px;
     
     
 }
+.seccion-lista-usuarios{
+    text-align: left;
+}
 
 .seccion-usuarios {
   
@@ -276,15 +279,15 @@ border-radius: 20px;
 .mensaje .avatar {
     width: 35px;
     margin-right: 1rem;
+    font-weight: bolder;
    
 }
-.mensaje.left .avatar {
-    margin-right: 0;
-    margin-left: 1rem;
-} 
 
-.usuario .cuerpo span {
+
+.cuerpo span {
     display: block;
+    margin-bottom: 0.5rem !important;
+    margin-top: 1rem !important;
 } 
 
 
@@ -317,17 +320,8 @@ border-radius: 20px;
     display: block;
     overflow-y: auto;
     padding-right: 15px;
-    margin-bottom: 280px;
-  
-    height: 70vh;
-   
-}
-.mensaje {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 2.5rem;
-    justify-content: flex-start;
-   
+    margin-bottom: 5px;
+    max-height: 60vh;  
 }
 
 
@@ -340,22 +334,6 @@ border-radius: 20px;
     width: calc(100% - 35px - 1rem - 5rem);
     margin-bottom: 10px;
 }
-
-.mensaje .texto {
-    display: block;
-    position: relative;
-}
-.mensaje .cuerpo .tiempo {
-    position: absolute;
-    display: block;
-    bottom: -2.1rem;
-    color: #919191;
-    width: 100%;
-}
-.mensaje.left .tiempo {
-    text-align: right;
-}
-
 
 /* panel escritura */
 
@@ -387,102 +365,10 @@ border-radius: 20px;
    
 }
 .panel-escritura .textarea textarea {
-    border: 0;
+   border: 0;
     background-color: #F2F2F2;
     border-radius: 12px;
     padding: 10px;
+    border: none;
 
 }
-
-/* divide el chat en dos columnas */
-/* .divTwoColumns{
-  
-    background-color:	#b8aba6;
-    margin:15px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 280px 1fr;
-  
-}  */
-
-/* columna izquierda de contactos */
-/* .contactsleft{
-    background-color:	#ffe4c4;
-    margin: 20px;
-    border-radius: 20px;
-    
-
-}  */
-/* columna derecha del chat */
-/* .chatRigth{
- 
-    background-color:	#ffe4c4;
-    margin:20px;
-    border-radius: 20px;
-
-} 
-
-.cardfixed{
-     overflow-y: scroll; 
-     height: 70vh; 
-        } */
-
-
-
-/* titulo del chat, columna derecha */
-/* .card-header {
-    display: flex;
-    justify-content:start;
-    align-items: center;
-    background-color: transparent;
-}  */
-
-
-/* h4.card-title {
-    font-size: 32px;
-} 
-
-
-  .media-body {
-    flex: initial;
-    display: table
-}  
-
-
-.media {
-    padding: 16px 12px;
-
-}
-
- /* .media-chat.chat-reverse .media-body p {
-    float: right;
-    clear: right;
-    background-color: #34cfe4;
-    color: #fff;
-    font-size: 15px;
-    font-weight: bolder;
-}  */
-
-/* .media-chat .media-body p {
-    padding: 6px 8px;
-    margin: 4px 0;
-    background-color: #f5f6f7;
-    border-radius: 3px
-}  */
-
-/* .media-body {
-    flex: initial;
-    display: table
-}  */
-
-
-
-
-
-
-
-
-
-
-
-
