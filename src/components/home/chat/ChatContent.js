@@ -65,8 +65,9 @@ export default function ChatContent() {
             <div className="seccion-usuarios">
                 <h4>USUARIOS CONECTADOS</h4>
                 <div className="seccion-lista-usuarios">
-                    {conectedUsers.map(userConected => (<div className="cuerpo">
-                        <span key={userConected}> <FontAwesomeIcon className="iconsUser" icon={faUser} />&nbsp;{userConected}</span>
+                    {conectedUsers.map((userOn, index) => (
+                    <div key={index} className="cuerpo">
+                        <span  > <FontAwesomeIcon className="iconsUser" icon={faUser} />&nbsp;{userOn}</span>
                     </div>))}
 
                 </div>
@@ -81,10 +82,10 @@ export default function ChatContent() {
 
                 <div className="panel-chat">
                     <div className="mensaje">
-                        {mensajes.map((e) => (
-                            <div key={e} className="cuerpo" align={e.nombre === userConected ? "right" : "left"}>
-                                <div className="avatar">{e.nombre}</div>
-                                <div className="texto">{e.mensaje}</div>
+                        {mensajes.map((e, index) => (
+                            <div key={index} className="cuerpo" align={e.nombre === userConected ? "right" : "left"}>
+                                <div  className="avatar">{e.nombre}</div>
+                                <div  className="texto">{e.mensaje}</div>
                             </div>
                         ))}
                         <div ref={divRef}></div>

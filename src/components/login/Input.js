@@ -55,13 +55,13 @@ export default function Input() {
                     <label className="labell" >Usuario</label>
                 </div>
 
-                <input onChange={handleChange} type="email" className="input" value={form.email} name="email" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
+                <input onChange={handleChange} type="email" className="input" value={form.email || ""} name="email" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
 
                 <div>
                     <label className="labell" >Contraseña</label>
 
                 </div>
-                <input onChange={handleChange} type="password" className="input" value={form.password} name="password" id="exampleInputEmail1" placeholder="*****************"></input>
+                <input onChange={handleChange} type="password" className="input" value={form.password || ""} name="password" id="exampleInputEmail1" placeholder="*****************"></input>
 
                 <div>
                     <button className="button1">Iniciar Sesión</button>
