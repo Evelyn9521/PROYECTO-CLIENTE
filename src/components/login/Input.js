@@ -9,8 +9,8 @@ import swal from "sweetalert";
 export default function Input() {
 
     //hook creado useForm
-    const formInitialState = ""; //dejamos vacio los inputs de email y password
-    const [form, handleChange] = useForm(formInitialState);
+   //dejamos vacio los inputs de email y password
+    const [form, handleChange] = useForm("");
     const {signIn, isAuthenticated} = useAuthContext();
     const history = useHistory();
 
@@ -29,7 +29,7 @@ export default function Input() {
 
         const response = await fetch(LOGIN_URL, options);
         const data = await response.json();
-        console.log(data);
+ 
 
         if(response.status >=200 && response.status < 300){
           signIn(data.token, data.user);
@@ -52,13 +52,13 @@ export default function Input() {
                 </div>
 
                 <div>
-                    <label className="labell" for="exampleInputEmail1">Usuario</label>
+                    <label className="labell" >Usuario</label>
                 </div>
 
                 <input onChange={handleChange} type="email" className="input" value={form.email} name="email" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
 
                 <div>
-                    <label className="labell" for="exampleInputEmail1">Contraseña</label>
+                    <label className="labell" >Contraseña</label>
 
                 </div>
                 <input onChange={handleChange} type="password" className="input" value={form.password} name="password" id="exampleInputEmail1" placeholder="*****************"></input>

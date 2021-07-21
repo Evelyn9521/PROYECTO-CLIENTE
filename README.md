@@ -1,3 +1,28 @@
+NOMBRE DEL PROYECTO
+-MUJERES QUE LUCHAN
+
+DESCRIPCIÓN DEL PROYECTO
+EL proyecto es una página web basada en las mujeres que padecen cáncer de mama, en el que se incluye información sobre esta enfermedad, además de un chat
+para poder comunicarse entre ellas y compartir sus testimonios.
+
+CONTENIDO
+El proyecto está desarrollado en React js. 
+Para la parte del frontend se utiliza HTML, CSS Y JAVASCRIPT.
+Para el backend se utiliza NODE JS, junto con MongoDB y Mongoose para la BBDD.
+EL chat lo he creado con Socket.io
+
+CLONAR EL PROYECTO
+1º A través de este enlace, accedes al proyecto en github,  https://github.com/Evelyn9521
+2º Pinchas en el repositorio PROYECTO-CLIENTE y copias el enlace del botón donde pone Code, en verde.
+3º Una vez copiado, accedes a la carpeta que lo vayas a pegar en tu pc, haciendo un git clone y pegando el enlace copiado.
+4º Repetir lo mismo con el repositorio CLIENTE-SERVIDOR.
+
+INSTALAR EL PROYECTO
+Para instalar y ejecutar este proyecto simplemente escriba y ejecute:
+1º npm install
+2º npm start
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

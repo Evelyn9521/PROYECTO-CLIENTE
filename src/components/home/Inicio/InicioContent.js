@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactPlayer from "react-player";
+// import ReactPlayer from "react-player";
 
 
 export default function InicioContent() {
@@ -148,12 +148,12 @@ export default function InicioContent() {
                         <p>El tratamiento del cáncer de mama es igual para los hombres que para las mujeres. Depende del tamaño del tumor y cuánto se haya propagado</p>
                     </div>
 
-                    <div  >
+                    {/* <div  >
                         <div><h2>Video explicativo</h2></div>
                         
                         <div className="video"> <ReactPlayer url='https://youtu.be/i2I_qfJjJSY' /></div>
                         
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

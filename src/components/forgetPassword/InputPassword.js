@@ -8,7 +8,7 @@ export default function InputPassword() {
                 <h4 className="colorletters1">Introduce tu correo electrónico y te enviaremos un enlace para que vuelvas a entrar en tu cuenta.</h4>
 
                 <div>
-                    <label for="exampleInputEmail1"></label>
+                   
                     <input type="email" className="inputForgetPassword" id="exampleInputEmail1" placeholder="Correo electrónico"></input>
                 </div>
 

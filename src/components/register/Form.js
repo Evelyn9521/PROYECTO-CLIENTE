@@ -5,7 +5,7 @@ import swal from "sweetalert";
 
 
 export default function Form() {
-    const formInitialState = { name: '', lastname: '', email:'', password:"" };; 
+    const formInitialState = { name: '', lastname: '', email:'', password:'' };
     const [form, handleChange] = useForm(formInitialState);
   
 
@@ -52,22 +52,22 @@ export default function Form() {
                 <h2 className="title">CREAR UNA CUENTA</h2>
                 <h4 className="title">Es rápido y fácil</h4>
                 <div className="marginInput">
-                    <label for="exampleInputName"></label>
+                 
                     <input onChange={handleChange} type="text" name="name" value ={form.name} className="" id="exampleInputName" placeholder="Nombre"></input>
                 </div>
 
                 <div className="marginInput">
-                    <label for="exampleInputLastName"></label>
+                   
                     <input onChange={handleChange} type="text" name="lastname" value ={form.lastname} id="exampleInputLastName" placeholder="Apellidos"></input>
                 </div>
 
                 <div className="marginInput">
-                    <label for="exampleInputEmail1"></label>
+                  
                     <input onChange={handleChange} type="email" name="email" value ={form.email} id="exampleInputEmail1" placeholder="Correo electrónico"></input>
                 </div>
 
                 <div className="marginInput">
-                <label for="examplePassword"></label>
+               
                     <input onChange={handleChange} type="password" name="password" value ={form.password} id="examplePassword" placeholder="Contraseña"></input>
                 </div>
              

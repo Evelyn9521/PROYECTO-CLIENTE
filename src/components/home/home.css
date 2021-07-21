@@ -267,12 +267,16 @@ border-radius: 20px;
 .seccion-lista-usuarios{
     text-align: left;
 }
-
+.seccion-usuarios h4{
+    color: rgb(131, 131, 255);
+    font-weight: bolder;
+}
 .seccion-usuarios {
-  
     margin-right: 1.5rem;
-    border-right: 4px solid #E7E7E7;
+    border-right: 4px solid rgb(131, 131, 255);
     padding-right: 15px;
+    font-weight: bolder;
+   
     
 }
 
@@ -283,11 +287,18 @@ border-radius: 20px;
    
 }
 
+.iconsUser{
+   
+    color: rgb(131, 131, 255);
 
+}
 .cuerpo span {
     display: block;
     margin-bottom: 0.5rem !important;
     margin-top: 1rem !important;
+    color: black;
+  
+    
 } 
 
 
@@ -303,15 +314,15 @@ border-radius: 20px;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 1.25rem;
-    border-bottom: 4px solid #E7E7E7;
+    border-bottom: 4px solid #ffbce9f1;
     padding-bottom: 15px;
+    color: rgb(131, 131, 255);
+    
 }
 .panel-escritura .textarea textarea,
 .usuario-seleccionado .cuerpo {
     flex-grow: 1;
-    flex-basis: 0;
-    
-   
+    flex-basis: 0;   
 }
 
 
@@ -321,9 +332,9 @@ border-radius: 20px;
     overflow-y: auto;
     padding-right: 15px;
     margin-bottom: 5px;
-    max-height: 60vh;  
+    max-height: 60vh; 
+    height: 100%; 
 }
-
 
 .mensaje .cuerpo {
     font-size: 0.85em;
@@ -338,11 +349,11 @@ border-radius: 20px;
 /* panel escritura */
 
 .panel-escritura .textarea {
-    display: flex;
+    display: flex; 
     flex-wrap: wrap;
-    border-top: 4px solid #E7E7E7;
+     border-top: 4px solid rgb(131, 131, 255);
     padding-top: 1rem;
-    
+    flex-grow: 1;
 }
 
 .panel-escritura button {
@@ -361,14 +372,14 @@ border-radius: 20px;
 .panel-escritura button.enviar {
     background-color: #4580F7;
     color: #fff;
-    
-   
+    border: none;
 }
+
 .panel-escritura .textarea textarea {
-   border: 0;
+
     background-color: #F2F2F2;
     border-radius: 12px;
     padding: 10px;
     border: none;
-
+  
 }
